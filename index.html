@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="mx-auto border rounded">
+        <div class="pl-3 pt-3 pb-1 bg-light">
+          <h3>Payment Form Example</h3>
+        </div>
+
+        <form class="form" action="/action_page.php" class="was-validated">
+
+          <!--Email -->
+
+          <div class="row px-3">
+            <div class="col-12 mb-3 pt-2">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="username@email.com"
+                required
+              />
+            </div>
+          </div>
+
+          <!--Card, CVC & Amount-->
+
+          <div class="row d-flex justify-content-between mb-3  px-3">
+            <div class="col-6">
+              <label for="exampleInputEmail1" class="form-label">Card #</label>
+              <input
+                type="text"
+                class="form-control"
+                id="creditCard"
+                aria-describedby="creditCard"
+                placeholder="XXXXXXXXXXXXXXXXX"
+                required
+              />
+            </div>
+
+            <div class="col-2">
+              <label for="exampleInputEmail1" class="form-label">CVC #</label>
+              <input
+                type="text"
+                class="form-control"
+                id="CVC"
+                aria-describedby="CVC"
+                placeholder="0000"
+                required
+              />
+            </div>
+
+            <div class="col-4">
+              <label for="exampleInputEmail1" class="form-label">Amount</label>
+              <input
+                type="text"
+                class="form-control"
+                id="amount"
+                aria-describedby="amount"
+                placeholder="Amount"
+                required
+              />
+            </div>
+          </div>
+
+          <!--Names-->
+
+          <div class="row d-flex justify-content-between mb-3  px-3">
+            <div class="col-6">
+              <label for="exampleInputEmail1" class="form-label"
+                >First Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                aria-describedby="firstName"
+                required
+              />
+            </div>
+
+            <div class="col-6">
+              <label for="exampleInputEmail1" class="form-label"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                aria-describedby="lastName"
+                required
+              />
+            </div>
+          </div>
+
+          <!--City, State, Postal Code-->
+
+          <div class="row d-flex justify-content-between mb-3  px-3">
+            <div class="col-6">
+              <label for="text" class="form-label">City</label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="city"
+                aria-describedby="city"
+                required
+              />
+            </div>
+
+            <div class="col-3">
+              <label class="" for="inlineFormCustomSelect">State</label>
+              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">Down</option>
+                <option value="2">Antrim</option>
+                <option value="3">Londonderry</option>
+                <option value="3">Donegal</option>
+                <option value="3">Tyrone</option>
+              </select>
+            </div>
+
+            <div class="col-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Postal Code</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="postCode"
+                aria-describedby="postCode"
+                required
+              />
+            </div>
+          </div>
+
+          <!--Payment Method & Message-->
+
+          <div class="row d-flex justify-content-between mb-3  px-3">
+            <div class="col-6">
+              <h5 class="mb-3">We Accept</h5>
+
+              <div
+                class="col-6 p-2 bg-secondary text-white d-flex justify-content-between rounded"
+              >
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    ><i class="fa-brands fa-cc-mastercard"></i
+                  ></label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    ><i class="fa-brands fa-cc-visa"></i
+                  ></label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    ><i class="fa-brands fa-cc-amex"></i
+                  ></label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    ><i class="fa-brands fa-cc-mastercard"></i
+                  ></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+                <p class="mt-3 text-muted">Add any notes here.</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Buttons-->
+
+          <div class="pr-3 pt-3 pb-1 pb-3 bg-light d-flex justify-content-end  px-3">
+            <button type="button" class="btn btn-secondary">Cancel</button>
+            <button class="btn btn-primary ml-3" type="submit">
+              Submit form
+            </button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+  
+</html>
